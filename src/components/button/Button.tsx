@@ -5,7 +5,7 @@ import styles from "./Button.module.scss";
 
 const Button = (): React.ReactElement => {
   return (
-    <div className={styles.buttonLine}>
+    <div className={styles.buttonContainer}>
       <div className={styles.buttonBlock}>
         <a href="" className={styles.button}>
           {" "}

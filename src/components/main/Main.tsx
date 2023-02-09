@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { setDataTC } from "../../store/slice";
 import { useAppSelector, useTypedDispatch } from "../../store/store";
@@ -7,8 +7,7 @@ import Title from "../title/Title";
 
 import styles from "./Main.module.scss";
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const Main = () => {
+const Main: React.FC = () => {
   const dispatch = useTypedDispatch();
 
   useEffect(() => {

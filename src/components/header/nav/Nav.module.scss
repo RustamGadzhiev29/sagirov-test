@@ -1,6 +1,8 @@
+@import '../../../common/styles/mixins.scss';
+@import '../../../common/styles/variables.scss';
+
 .nav {
-  display: flex;
-  justify-content: flex-end;
+  @include flex(row,flex-end, center, nowrap);
   width: 100%;
   z-index: 2;
   position: relative;
@@ -10,15 +12,15 @@
 
   a {
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontFamilyStyle;
     text-decoration: none;
-    color: #ffff;
+    color: $textColor;
     padding-bottom:  10px;
     position: relative;
     display: inline-block;
     margin: 20px;
     &:hover {
-      color:#a8a8a8
+      color:$activeTextColor
     }
     &:after {
       width: 0;
@@ -29,7 +31,7 @@
       right: 0;
       content: "";
       height: 1px;
-      background-color: #a8a8a8;
+      background-color: $activeTextColor;
       transition: width 0.3s ease-out;
     }
     &:hover:after {

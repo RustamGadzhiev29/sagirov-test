@@ -8,12 +8,20 @@ type PropsType = {
   index: number;
   data: DataType;
 };
-const Item = ({ index, data }: PropsType): React.ReactElement => {
+const Item: React.FC<PropsType> = ({ index, data }) => {
   return (
-    <div className={`${styles.item} ${styles[`item${index}`]}`}>
-      <span className={styles.description}> description</span>
-      <h2 className={styles.itemTitle}>{data.value}</h2>
-      <span className={styles.description}> description</span>
+    <div className={styles.itemContainer}>
+      <div className={`${styles.item} ${styles[`item${index}`]}`}>
+        <span className={styles.description}>
+          {" "}
+          {data.description && data.description[0]}
+        </span>
+        <h2 className={styles.itemTitle}>{data.value}</h2>
+        <span className={styles.description}>
+          {" "}
+          {data.description && data.description[1]}
+        </span>
+      </div>
     </div>
   );
 };

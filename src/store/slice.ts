@@ -1,3 +1,6 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-return-assign */
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import DataApi from "../api/api";

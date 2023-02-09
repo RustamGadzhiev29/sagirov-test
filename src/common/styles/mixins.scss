@@ -1,0 +1,9 @@
+@import "./variables";
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assets/images/logo.png";
+import logo from "../../common/assets/images/logo.png";
 
 import BurgerNav from "./burgerNav/BurgerNav";
 import styles from "./Header.module.scss";

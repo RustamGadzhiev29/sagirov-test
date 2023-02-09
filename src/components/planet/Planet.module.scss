@@ -1,12 +1,16 @@
 .planet {
     position: absolute;
-    left: calc(50% - 195px);
-    top: calc(28%);
+    display: flex;
+    top: 19vh;
+    justify-content: center;
+    align-content: center;
+    @media (max-width: 767px) {
+        display:none;
+    }
 
     img {
         border-radius: 100%;
-        max-width:100%;
-        max-height:100%;
         position: fixed;
+        height: 60%;
     }
 }
