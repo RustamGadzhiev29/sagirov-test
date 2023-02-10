@@ -6,17 +6,35 @@ import BurgerNav from "./burgerNav/BurgerNav";
 import styles from "./Header.module.scss";
 import Nav from "./nav/Nav";
 
-type HeaderPropsType = {
-  navLinks: Array<NavLinkType>;
-};
 export type NavLinkType = {
   sectionId: string;
   navTitle: string;
-  offset: number;
-  style: { marginTop: string };
 };
 
-const Header: React.FC<HeaderPropsType> = ({ navLinks }) => {
+const navLinks: Array<NavLinkType> = [
+  {
+    sectionId: "Main",
+    navTitle: "Главная",
+  },
+  {
+    sectionId: "Tehnology",
+    navTitle: "Технология",
+  },
+  {
+    sectionId: "Graph",
+    navTitle: "График полетов",
+  },
+  {
+    sectionId: "About",
+    navTitle: "O компании",
+  },
+  {
+    sectionId: "Contacts",
+    navTitle: "Контакты",
+  },
+];
+
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>

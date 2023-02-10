@@ -24,8 +24,7 @@ const Main: React.FC = () => {
         <Title />
         <div className={styles.itemContainer}>
           {data.map((t, index) => (
-            // eslint-disable-next-line react/jsx-key
-            <Item index={index} data={t} />
+            <Item key={t.value} index={index} data={t} />
           ))}
         </div>
       </div>

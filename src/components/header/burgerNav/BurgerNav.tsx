@@ -37,11 +37,7 @@ const BurgerNav: React.FC<NavType> = ({ navLinks }) => {
       >
         {navLinks.map((nav) => {
           return (
-            <NavLink
-              // activeClass={style.active}
-              key={nav.sectionId}
-              to="/"
-            >
+            <NavLink key={nav.sectionId} to="/">
               {nav.navTitle}
             </NavLink>
           );
