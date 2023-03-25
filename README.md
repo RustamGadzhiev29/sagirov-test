@@ -1,14 +1,17 @@
-SpaceX page for the vacancy FrontEnd developer.
+# SpaceX page for the vacancy FrontEnd developer.
+## Dev
+```bash
+npm install
+```
+## Build
+```bash
+npm run build
+```
+## Stack
 
-This project was bootstrapped with Create React App.
+* React
+* TS
+* Redux-toolkit
+* SCSS
 
-Used Technologies:
-React.js
-TypeScript
-Redux Toolkit
-Sass
-
-Available Scripts In the project directory, you can run:
-npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
-
-The page will reload if you make edits. You will also see any lint errors in the console.
+# [View a demo](https://spacex-rocket-test.web.app/)
